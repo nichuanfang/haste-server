@@ -2,11 +2,12 @@ version: '3.0'
 services:
   haste-server:
     build: .
+    container_name: haste-server
+    restart: always
+    network_mode: host
     environment:
-      - STORAGE_TYPE=memcached
-      - STORAGE_HOST=memcached
-      - STORAGE_PORT=11211
+      STORAGE_TYPE: redis
+      STORAGE_HOST: 127.0.0.1
+      STORAGE_PORT: 11211
     ports:
       - 7777:7777
-  memcached:
-    image: memcached:latest

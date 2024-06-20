@@ -6,7 +6,7 @@ var winston = require('winston');
 var connect = require('connect');
 var route = require('connect-route');
 var connect_st = require('st');
-var connect_rate_limit = require('connect-ratelimit');
+// var connect_rate_limit = require('connect-ratelimit');
 
 var DocumentHandler = require('./lib/document_handler');
 
@@ -102,10 +102,10 @@ var documentHandler = new DocumentHandler({
 var app = connect();
 
 // Rate limit all requests
-if (config.rateLimits) {
-  config.rateLimits.end = true;
-  app.use(connect_rate_limit(config.rateLimits));
-}
+// if (config.rateLimits) {
+//   config.rateLimits.end = true;
+//   app.use(connect_rate_limit(config.rateLimits));
+// }
 
 // first look at API calls
 app.use(route(function(router) {

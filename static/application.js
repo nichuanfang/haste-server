@@ -70,11 +70,13 @@ haste_document.prototype.save = function(data, callback) {
       _this.locked = true;
       _this.key = res.key;
       var high = hljs.highlightAuto(data);
+      var url = _this.app.baseUrl + res.key;
+      navigator.clipboard.writeText(url)
       callback(null, {
         value: high.value,
         key: res.key,
         language: high.language,
-        lineCount: data.split('\n').length
+        lineCount: data.split("\n").length,
       });
     },
     error: function(res) {

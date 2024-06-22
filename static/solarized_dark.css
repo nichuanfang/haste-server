@@ -1,20 +1,18 @@
-/*
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
-*/
-
+/* Original Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com> */
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #002b36;
+  background: #1a1a1a;
+  /* 深色背景 */
   color: #839496;
+  /* 主文本颜色 */
 }
 
 .hljs-comment,
 .hljs-quote {
   color: #586e75;
+  /* 注释和引用的颜色，较淡 */
 }
 
 /* Solarized Green */
@@ -22,6 +20,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-tag,
 .hljs-addition {
   color: #859900;
+  /* 关键字、标签选择器、添加的内容 */
 }
 
 /* Solarized Cyan */
@@ -32,6 +31,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-doctag,
 .hljs-regexp {
   color: #2aa198;
+  /* 数字、字符串、元数据字符串、字面量、文档标签、正则表达式 */
 }
 
 /* Solarized Blue */
@@ -41,6 +41,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-id,
 .hljs-selector-class {
   color: #268bd2;
+  /* 标题、章节、名称、ID选择器、类选择器 */
 }
 
 /* Solarized Yellow */
@@ -51,6 +52,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-class .hljs-title,
 .hljs-type {
   color: #b58900;
+  /* 属性、变量、模板变量、类标题、类型 */
 }
 
 /* Solarized Orange */
@@ -63,22 +65,27 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-pseudo,
 .hljs-link {
   color: #cb4b16;
+  /* 符号、子弹点、替换、元数据及其关键字、属性选择器、伪类选择器、链接 */
 }
 
 /* Solarized Red */
 .hljs-built_in,
 .hljs-deletion {
   color: #dc322f;
+  /* 内建函数和删除的内容 */
 }
 
 .hljs-formula {
   background: #073642;
+  /* 公式背景色，稍微深一点以区分其他内容 */
 }
 
 .hljs-emphasis {
   font-style: italic;
+  /* 强调斜体 */
 }
 
 .hljs-strong {
   font-weight: bold;
+  /* 强调加粗 */
 }

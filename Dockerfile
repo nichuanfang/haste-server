@@ -61,10 +61,6 @@ EXPOSE ${PORT}
 # 设置停止信号
 STOPSIGNAL SIGINT
 
-# 健康检查
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD [ "sh", "-c", "echo -n 'curl localhost:7777... '; \
-    (curl -sf localhost:7777 > /dev/null) && echo OK || (echo Fail && exit 2)" ]
 
 # 入口点和默认命令
 ENTRYPOINT [ "bash", "docker-entrypoint.sh" ]
